@@ -1,3 +1,65 @@
+//mixins
+
+
+//colors
+$bg_body: #1E2D3B;
+$bg_header: rgb(46, 58, 70);
+
+
+//generals
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: red;
+    background: $bg_body;
+    height: 100vh;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+// header
+
+header {
+    width: 100%;
+    height: 70px;
+    background: $bg_header;
+    display: flex;
+    align-items: center;
+
+    & img {
+      height: 50px;
+    }
+}
+
+// main
+
+main {
+
+  & .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+
+    .cd {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 200px;
+        padding: 20px;
+        margin: 10px 20px;
+        height: 360px;
+        background: rgb(46, 58, 70);
+        text-align: center;
+    }
+  }
 }

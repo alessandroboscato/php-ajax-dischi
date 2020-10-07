@@ -1,5 +1,6 @@
 <?php
-
+  include "db.php";
+  var_dump($database);
  ?>
 
 <!DOCTYPE html>
@@ -12,6 +13,24 @@
   <link rel="stylesheet" href="dist/app.css">
 </head>
 <body>
-
+  <!-- header -->
+  <header>
+    <div class="container">
+      <img src="img/logo.png" alt="logo spotify">
+    </div>
+  </header>
+  <!--/header -->
+  <!-- main -->
+  <main>
+    <div class="container">
+      <div class="cd">
+        <img src="" alt="">
+        <h3></h3>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </main>
+  <!--/main -->
 </body>
 </html>
