@@ -34,16 +34,27 @@ main .container {
 }
 main .container .cd {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
   flex-basis: 200px;
   padding: 20px;
   margin: 10px 20px;
   height: 360px;
+  max-width: 200px;
   background: #2e3a46;
   text-align: center;
 }
 main .container .cd img {
   max-width: 100%;
+}
+main .container .cd h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 10px;
+  color: #fff;
+}
+main .container .cd span {
+  color: #62666b;
+  font-size: 20px;
 }

@@ -4,7 +4,9 @@
 //colors
 $bg_body: #1E2D3B;
 $bg_header: rgb(46, 58, 70);
-
+$bg_cd: rgb(46, 58, 70);
+$main_text: #fff;
+$text_details: #62666b;
 
 //generals
 
@@ -51,19 +53,30 @@ main {
 
     .cd {
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        flex-direction: column;
         flex-basis: 200px;
         padding: 20px;
         margin: 10px 20px;
         height: 360px;
-        background: rgb(46, 58, 70);
+        max-width: 200px;
+        background: $bg_cd;
         text-align: center;
 
         & img {
           max-width: 100%;
         }
+      & h3{
+        text-transform: uppercase;
+        font-size: 24px;
+        margin: 10px;
+        color: $main_text;
+      }
+      & span {
+        color: $text_details;
+        font-size: 20px;
+      }
     }
   }
 }
