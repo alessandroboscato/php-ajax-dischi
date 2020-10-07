@@ -1,6 +1,6 @@
 <?php
   include "db.php";
-  var_dump($database);
+
  ?>
 
 <!DOCTYPE html>
@@ -23,12 +23,14 @@
   <!-- main -->
   <main>
     <div class="container">
-      <div class="cd">
-        <img src="" alt="">
-        <h3></h3>
-        <span></span>
-        <span></span>
-      </div>
+      <?php foreach ($database as $cd) { ?>
+        <div class="cd">
+          <img src="<?php echo $cd['poster'] ?>" alt="poster cd">
+          <h3><?php echo $cd['title'] ?></h3>
+          <span><?php echo $cd['author'] ?></span>
+          <span><?php echo $cd['year'] ?></span>
+        </div>
+    <?php } ?>
     </div>
   </main>
   <!--/main -->

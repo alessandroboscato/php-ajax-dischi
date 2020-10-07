@@ -60,6 +60,10 @@ main {
         height: 360px;
         background: rgb(46, 58, 70);
         text-align: center;
+
+        & img {
+          max-width: 100%;
+        }
     }
   }
 }

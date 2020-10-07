@@ -44,3 +44,6 @@ main .container .cd {
   background: #2e3a46;
   text-align: center;
 }
+main .container .cd img {
+  max-width: 100%;
+}
