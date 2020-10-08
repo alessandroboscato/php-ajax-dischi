@@ -27,8 +27,8 @@
     <div class="cd">
       <img src="{{poster}}" alt="poster cd">
       <h3>{{title}}</h3>
-      <span>{{author}}</span>
-      <span>{{year}}</span>
+      <span class="details">{{author}}</span>
+      <span class="details">{{year}}</span>
     </div>
 </script>
 </body>

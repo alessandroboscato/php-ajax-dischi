@@ -69,7 +69,8 @@ main {
         color: $main_text;
 
       }
-      & span {
+      & .details {
+        display: block;
         color: $text_details;
         font-size: 20px;
       }

@@ -48,7 +48,8 @@ main .container .cd h3 {
   margin: 10px;
   color: #FFFFFF;
 }
-main .container .cd span {
+main .container .cd .details {
+  display: block;
   color: #62666b;
   font-size: 20px;
 }
