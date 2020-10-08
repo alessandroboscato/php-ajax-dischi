@@ -1,4 +1,4 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap);* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,6 +7,7 @@
 body {
   background: #1E2D3B;
   height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -28,25 +29,18 @@ header img {
 main .container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   padding: 100px 0;
 }
 main .container .cd {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-basis: 200px;
-  padding: 20px;
-  margin: 10px 20px;
-  height: 360px;
-  max-width: 200px;
   background: #2E3A46;
+  width: calc((100% / 3) - 80px);
+  margin: 20px 40px;
+  padding: 20px;
   text-align: center;
 }
 main .container .cd img {
-  max-width: 100%;
+  width: 100%;
 }
 main .container .cd h3 {
   text-transform: uppercase;
@@ -57,4 +51,14 @@ main .container .cd h3 {
 main .container .cd span {
   color: #62666b;
   font-size: 20px;
+}
+@media (max-width: 1170px) {
+  main .container .cd {
+    width: calc((100% / 2) - 80px);
+  }
+}
+@media (max-width: 780px) {
+  main .container .cd {
+    width: 100%;
+  }
 }

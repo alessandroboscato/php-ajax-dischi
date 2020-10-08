@@ -1,5 +1,8 @@
+//_commons
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-//palette
+//_variables
+
 $bg_body: #1E2D3B;
 $bg_header: #2E3A46;
 $bg_cd: #2E3A46;
@@ -17,6 +20,7 @@ $text_details: #62666b;
 body {
     background: $bg_body;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -45,35 +49,35 @@ main {
   & .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     padding: 100px 0;
 
     .cd {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        flex-basis: 200px;
-        padding: 20px;
-        margin: 10px 20px;
-        height: 360px;
-        max-width: 200px;
         background: $bg_cd;
+        width: calc((100% / 3) - 80px);
+        margin: 20px 40px;
+        padding: 20px;
         text-align: center;
 
         & img {
-          max-width: 100%;
+          width: 100%;
         }
       & h3{
         text-transform: uppercase;
         font-size: 24px;
         margin: 10px;
         color: $main_text;
+
       }
       & span {
         color: $text_details;
         font-size: 20px;
+      }
+      @media (max-width: 1170px) {
+        width: calc((100% / 2) - 80px);
+      }
+      @media (max-width: 780px) {
+        width: 100%;
       }
     }
   }
