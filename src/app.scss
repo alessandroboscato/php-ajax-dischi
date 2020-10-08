@@ -81,4 +81,7 @@ main {
       }
     }
   }
+  & .no-results {
+    color: $text_details;
+  }
 }

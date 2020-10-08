@@ -1,5 +1,5 @@
 <?php
-  include "db.php";
+  // include "db.php";
  ?>
 
 <!DOCTYPE html>
@@ -22,14 +22,18 @@
   <!-- main -->
   <main>
     <div class="container">
-      <?php foreach ($database as $cd) { ?>
-        <div class="cd">
-          <img src="<?php echo $cd['poster'] ?>" alt="poster cd">
-          <h3><?php echo $cd['title'] ?></h3>
-          <span><?php echo $cd['author'] ?></span>
-          <span><?php echo $cd['year'] ?></span>
-        </div>
-    <?php } ?>
+      <?php if(!empty($database)) { ?>
+        <?php foreach ($database as $cd) { ?>
+          <div class="cd">
+            <img src="<?php echo $cd['poster'] ?>" alt="poster cd">
+            <h3><?php echo $cd['title'] ?></h3>
+            <span><?php echo $cd['author'] ?></span>
+            <span><?php echo $cd['year'] ?></span>
+          </div>
+        <?php } ?>
+      <?php } else { ?>
+        <h2 class="no-results">Non ci sono risultati nel database</h2>
+      <?php } ?>
     </div>
   </main>
   <!--/main -->

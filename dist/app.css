@@ -62,3 +62,6 @@ main .container .cd span {
     width: 100%;
   }
 }
+main .no-results {
+  color: #62666b;
+}
