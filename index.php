@@ -17,7 +17,7 @@
   <!--/header -->
   <!-- main -->
   <main>
-    <div class="container">
+    <div id="cds" class="container">
       <div class="cd">
         <img src="" alt="poster cd">
         <h3></h3>
@@ -27,5 +27,6 @@
     </div>
   </main>
   <!--/main -->
+  <script type="text/javascript" src="dist/app.js"></script>
 </body>
 </html>
