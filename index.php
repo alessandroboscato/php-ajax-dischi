@@ -18,15 +18,18 @@
   <!-- main -->
   <main>
     <div id="cds" class="container">
-      <div class="cd">
-        <img src="" alt="poster cd">
-        <h3></h3>
-        <span></span>
-        <span></span>
-      </div>
+
     </div>
   </main>
   <!--/main -->
   <script type="text/javascript" src="dist/app.js"></script>
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div class="cd">
+      <img src="{{poster}}" alt="poster cd">
+      <h3>{{title}}</h3>
+      <span>{{author}}</span>
+      <span>{{year}}</span>
+    </div>
+</script>
 </body>
 </html>

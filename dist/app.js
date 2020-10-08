@@ -16091,7 +16091,36 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
 
-$(document).ready(function () {});
+$(document).ready(function () {
+  $.ajax({
+    "url": "http://localhost:8888/php-ajax-dischi/api.php",
+    "method": "GET",
+    "success": function success(data) {
+      printResult(data);
+    },
+    "error": function error() {
+      alert("Error");
+    }
+  });
+}); // ------------------------
+// FUNCTIONS
+// ------------------------
+
+function printResult(data) {
+  var source = document.getElementById("entry-template").innerHTML;
+  var template = Handlebars.compile(source);
+
+  for (var i = 0; i < data.length; i++) {
+    var context = {
+      "poster": data[i]["poster"],
+      "title": data[i]["title"],
+      "author": data[i]["author"],
+      "year": data[i]["year"]
+    };
+    var html = template(context);
+    $("#cds").append(html);
+  }
+}
 
 /***/ }),
 
